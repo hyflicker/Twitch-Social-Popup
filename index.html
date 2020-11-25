@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <style>
+        html {
+            overflow: hidden;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            background: none;
+        }
+        img{
+            position: absolute;
+            left: 250%;
+
+            height: 228px;
+            width: 1128px;
+        }
+        .images
+        {
+            transform: scale(0.25);
+            margin-top: 5%;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socail Alert</title>
+</head>
+<body>
+    <div class="images">
+        <img src="https://hyflicker.weebly.com/uploads/1/0/1/0/101010556/discord_orig.png" alt="" class="test1" id="discordImg">
+        <img src="https://hyflicker.weebly.com/uploads/1/0/1/0/101010556/twitch_orig.png" alt="" class="test1" id="twitchImg">
+        <img src="https://hyflicker.weebly.com/uploads/1/0/1/0/101010556/twitter_orig.png" alt="" class="test1" id="twitterImg">
+        <img src="https://hyflicker.weebly.com/uploads/1/0/1/0/101010556/youtube_orig.png" alt="" class="test1" id="youtubeImg">
+    </div>
+</body>
+<script>
+
+var discord = document.getElementById('discordImg');
+var twitch = document.getElementById('twitchImg');
+var twitter = document.getElementById('twitterImg');
+var youtube = document.getElementById('youtubeImg');
+
+function socialDiscord1() {
+    setTimeout(function(){
+        discord.style.transition = "all 1s";
+        discord.style.transform = "translateX(-1150px)";
+    }, 5000);
+    console.log("1")
+}
+
+function socialDiscord2() {
+    setTimeout(function(){
+        discord.style.transition = "all 1s";
+        discord.style.transform = "translateX(0px)";
+    }, 16000);
+    console.log("2")
+}
+function socialTwitch1() {
+    setTimeout(function(){
+        twitch.style.transition = "all 1s";
+        twitch.style.transform = "translateX(-1150px)";
+    }, 120000);
+    console.log("3")
+}
+
+function socialTwitch2() {
+    setTimeout(function(){
+        twitch.style.transition = "all 1s";
+        twitch.style.transform = "translateX(0px)";
+    }, 126000);
+    console.log("4")
+}
+function socialTwitter1() {
+    setTimeout(function(){
+        twitter.style.transition = "all 1s";
+        twitter.style.transform = "translateX(-1150px";
+    }, 240000);
+    console.log("5")
+}
+
+function socialTwitter2() {
+    setTimeout(function(){
+        twitter.style.transition = "all 1s";
+        twitter.style.transform = "translateX(0px)";
+    }, 246000);
+    console.log("6")
+}
+function socialYoutube1() {
+    setTimeout(function(){
+        youtube.style.transition = "all 1s";
+        youtube.style.transform = "translateX(-1150px)";
+    }, 360000);
+    console.log("7")
+}
+
+function socialYoutube2() {
+    setTimeout(function(){
+        youtube.style.transition = "all 1s";
+        youtube.style.transform = "translateX(0px)";
+    }, 366000);
+    console.log("8")
+}
+
+function reload() {
+    setTimeout(function(){
+        location.reload();
+    }, 480000);
+    }
+socialDiscord1();
+socialDiscord2();
+socialTwitch1();
+socialTwitch2();
+socialTwitter1();
+socialTwitter2();
+socialYoutube1();
+socialYoutube2();
+
+window.onload = reload;
+
+</script>
+</html>
